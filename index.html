@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--imageandlinks-->
+    <div class="dropdown">
+        <a class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="dropdown-content">
+        <div class="flex">
+                <a href="index.html" >Home</a>
+                <a href="product.html">Our products</a>
+        </div>
+        <div class="flex">
+                <a href="order.html">Order</a>
+        </div>
+        <div class="flex">
+            <a href="#About">About us</a>
+            <a href="personel.html">Personel</a>
+        </div>
+      
+       
+        </div>
+    </div>
+  
+    <div class="head-banner">
+        <img src="images/v.jpg" alt="">
+        <div class="j">
+            <h4>Cusine house</h4>
+        </div>
+       
+        <div class="link">
+            <ul>
+                <li class="d" ><a href="index.html">Home</a></li>
+                <li><a href="product.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="personel.html">Personel</a></li>
+            </ul>
+        </div>
+       
+    </div>
+    <!--imageandlinks-->
+    <!--Slideshow-->
+    <div class="mySlides" >
+        <img src="images/delivery.jpg" style="width:100%; height: 640px;">
+        <p>Cuisnine house:Get delivery on time delivery at no extra cost</p>
+        </div>
+        <div class="mySlides">
+        <img src="images/chef.jpg" style="width:100%; height: 640px;">
+        <p>Cuisnine house:Get world class food from top chefs</p>
+        </div>
+        <div class="mySlides">
+        <img src="images/catering.jpg" style="width:100%; height: 640px;">
+        <p>Cuisnine house:Get the best catering</p>
+        </div>
+        <div class="mySlides">
+        <img src="images/friends.jpg" style="width:100%; height: 640px;">
+        <p>Cuisnine house:Eat with your friends, family and enemies </p>
+        </div>
+        
+      </div>
+      
+      <script>
+      var myIndex = 0;
+      carousel();
+      
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 5000); // Change image every 5 seconds
+      }
+      </script>
+      <!--about us-->
+      <div id="About" class="about">
+          <h1>About us</h1>
+          <img src="images/chefpoint.jpg" alt="">
+          <p>Cuisnine house is one of Top Brand’ restaurant brands,the brand has established itself as a market leader and one of the fastest growing restaurant brands in the country with currently 3400 stores across World and more to come.</p>
+          <ul>
+              <li>World Class Staffs</li>
+              <li>Top Notch Facilities</li>
+              <li> One Of The Biggest Brand Around</li>
+              <li>Simply The Best Meals You Can Trust</li>
+          </ul>
+          <h2 class="h2">100% Organic foods</h2>
+          <div class="one">
+              
+              <p>Organic foods typically are not processed using irradiation, industrial solvents, or synthetic food additives.</p>
+          </div>
+      </div>
+      <!--services-->
+      <div class="services">
+          <h1>Services</h1>
+          <div class="gu">
+            <img src="images/guy.jpg" alt="">
+          </div>
+          <div class="p1">
+              <img src="images/cake.jpg" alt="">
+              <h2>Birthday Party</h2>
+              <p>We offer birthday services where we provide the venue and all engaging activities all for a pocket friendly price</p>
+          </div>
+          <div class="p2">
+            <img src="images/calendar.jpg" alt="">
+            <h2>Charity Events</h2>
+            <p>Yeah even charity events we have got you covered</p>
+        </div>
+        <div class="p3">
+            <img src="images/pizza.jpg" alt="">
+            <h2>Events Party</h2>
+            <p>We Cater for various events ranging from weddings,lauches you name it and you are assured of an awesome time</p>
+        </div>
+        <div class="p4">
+            <img src="images/burger.jpg" alt="">
+            <h2>Private Dinning</h2>
+            <p>You need a time alone or you don't want that much crowd guess what we got you covered</p>
+        </div>
+        <div class="order">
+            <h1>Reserve Table</h1>
+            <img src="images/guy2.jpg" alt="">    
+            <h2>Book A Table</h2>
+            <p>A table reservation is an arrangement made in advance to have a table available at a restaurant, at  Cuisnine house we make this process relatively easy and basic just fill the forms below to make a reservation your input will be save in our database</p>
+
+            <form class="gp" action="mailto:someone@example.com" method="post" enctype="text/plain">
+                Name:<br>
+                <input type="text" name="name" placeholder="Name"><br>
+                E-mail:<br>
+                <input type="text" name="mail" placeholder="E-mail"><br>
+                Persons:<br>
+                <input type="number" id="quantity" name="quantity" min="0" max="100" placeholder="persons">
+                
+                <div class="lk">
+                    <h4>Time:<br></h4>
+                    <input type="text" name="Time" placeholder="Time">
+                    <h4>PhoneNumber:<br></h4>
+                    <input type="text" name="phone number" placeholder="Phone number" >
+                    <h4>Date:<br></h4>
+                    <input type="text" name="Date" placeholder="mm yy dd"><br><br>
+                </div>
+                <div class="gh">
+                    <input class="f" type="submit" value="Send">
+                    <input class="f" type="reset" value="Reset">
+                </div>
+               
+                </form>
+            <div class="foot">
+                <footer>
+                    <h2>2020 All Rights Reserved|Terms and Conditions|Privacy Policy</h2>
+                    <p>Website Developed By Cuisine. Call Us for events: 07069217291</p>
+                </footer>
+            </div>
+        </div>
+      </div>
+</body>
+</html>

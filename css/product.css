@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.head-banner h4{
+    font-family: 'Pacifico', cursive;
+    
+}
+.head-banner ul{
+    display: flex;
+    padding: 25px;
+    justify-content: space-evenly;;
+    align-content: center;
+}
+.head-banner{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-top: 0px;
+    background-color: white;
+    border-bottom: 1px solid black;
+ 
+}
+.head-banner li{
+    padding: 16px;
+    list-style: none;
+    font-size: 22px;
+}
+.head-banner a{
+    text-decoration: none;
+    color: black;
+}
+.head-banner a:hover{
+    transition: ease-in 3s;
+    border-bottom: black 1px solid;
+}
+.head-banner img{
+    width: 250px;
+    margin-top: -30px;
+    height: 30%;
+    
+}
+.head-banner h4{
+    margin-left: -900px;
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+.d a{
+    border-bottom: black 1px solid;
+}
+body{
+    
+    
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.menu h1{
+    text-align: center;
+}
+.menu{
+    border-bottom: black 1px solid;
+    height: fit-content;
+}
+.menu{
+    margin-top: 100px;
+}
+.link2 ul{
+    display: flex;
+    padding: 12px;
+    justify-content: space-evenly;;
+    align-content: center;
+    background: url("../images/back.jpg");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    margin-left: 270px;
+    margin-top: 50px;
+    
+}
+.link2 li{
+    padding: 16px;
+    list-style: none;
+    font-size: 22px;
+    margin-left: -350px;
+}
+.link2 a{
+    text-decoration: none;
+    border-bottom: none;
+    color:silver;
+}
+.link2 a:hover{
+    color: red;
+    border-bottom: red 1px solid;
+}
+.product img{
+    width: 250px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 200px;
+}
+
+.product p{
+    max-width: 300px;
+    font-size: 20px;
+    font-family: 'Architects Daughter', cursive;
+    margin-top: -140px;
+    margin-left: 275px;
+}
+.product a{
+    color: black;
+    text-decoration: none;
+}
+.product a:hover{
+    color: red;
+}
+.product h3{
+    font-size: 20px;
+    font-family: 'Architects Daughter', cursive;
+    margin-left: 100px;
+}
+hr{
+    margin-top: 165px;
+    width: 500px;
+    margin-left: 20px;
+
+}
+.n{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.f{
+    height: 50px;
+    width: 273px;
+    font-size: 25px;
+    background-color: red;
+    border: none;
+    border-radius: 5%;
+    margin-top: 10px;
+}
+.f:hover{
+    background-color: yellow;
+    color: silver;
+}
+.foot{
+    background-color: black;
+    height: 100px;
+    color: white;
+    margin-top: 100px;
+    
+}
+.foot h1{
+    width: 1000px;
+    margin-left:200px;
+}
+.j{
+    margin-left: 670px;
+}
+.foot p{
+    font-size: 20px;
+    margin-left: 200px;
+}
+.toggle-button{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 400px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+.toggle-button .bar{
+    height: 3px;
+    width: 70%;
+    background-color:black;
+    border-radius:10px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: -1px;
+    font-size: 25px;
+    background-color: red;
+  }
+  .flex{
+      display: flex;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    margin-left: 270px;
+    margin-top: 25px;
+    
+   width: 200px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #3e8e41;
+
+}
+@media (max-width:768px){
+    .link{
+        display: none;
+    }
+    .head-banner{
+        
+        width: 100%;
+        
+    }
+    .head-banner img{
+        height: 20%;
+    }
+    .j{
+     margin-left:700px;
+    }
+    .toggle-button{
+        display: flex;
+    }
+    .n{
+        display: grid;
+        margin-left: -15px;
+    }
+    .n img{
+        width: 200px;
+    }
+
+    .link2{
+        margin-left: -50px;
+        width: 100%;
+    }
+    .link2 ul{
+        margin-left: 100px;
+        justify-content: space-between;
+    }
+    .link2 li{
+        font-size: 20px;
+        margin-left: 0px;
+    }
+    .n p{
+        font-size: 19px;
+        margin-left: 220px;
+        width: 50%;
+    }
+    .foot h2{
+        max-width: 100%;
+      
+       
+        
+    
+    }
+    .product{
+        width: 100%;
+    }
+    .foot{
+        margin-top: 100px;
+        height: 20%;
+        
+    }
+
+}
